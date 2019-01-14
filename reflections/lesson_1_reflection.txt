@@ -1,0 +1,38 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+    It helped me very well! I can compare two file line by line and can easily figure out what the typos! are.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    History of my file can help me to get undo my work or changes i did in my file. Its very efficient to do than checking the files mannuly.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:
+    too short file are not commited
+    too big files are not commited
+    commitment is done only after any logical changes
+
+    cons:
+    we need to commit mannuly
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    This is because if multiple files are connected to each other and if any changes made in one file and if that changes affects other files than those file will also have to change, than this all changes may be commited in one commit as to be safe from confusion.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    By cloning the asteroid repositry from the command "git clone repositry file link".
+    after the successful cloning we can directly use the command git log and git diff to view our history.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    by using git checkout command i can check what bug does it had ,this makes my work more easy and fast.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I wana try to open text editor through cmd line and manipulate and exicute that file or check that file when this file is edited priviouly and what changes were made. And wana enjoy version-control feature.
