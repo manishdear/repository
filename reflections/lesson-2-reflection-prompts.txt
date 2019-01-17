@@ -3,33 +3,54 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-	staging area is where the file is kept or added to commit. staging area is different from working directory because after adding a commit file comes under working directory. And repository is a path of all the commited file.
+	staging area is where the file is added to commit. working directory is where all file are kept initially before being added to staging area . And repository is where all copies of files are kept after commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	By using git status command we can check which files are in staging area.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	when we need to do exp but we are not sure about that we can do that by just changing the branch.
 
 How do the diagrams help you visualize the branch structure?
+	through diagrams we can actually visulize/imagine to what is happening.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	after merging two branches together we can update our master branch to most recent update of both branches. We represent it in the diagram the way we do because its the cool way to imagine what we are doing.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	pros:
+	we don't realy take care about merging its automatic and get done when needed.
+
+	cons:
+	Some time conflit may occur then automatic merging can't be done , So some human intraction is needed to interfare to solve the conflict.
 
 
 git log
 git checkout
-git diff
-git diff -u
+git diff id1 id2
+git diff -u file1 file2
 ls
 ls -a
 pwd
-git init
+git init  // to initiate new repository
 git status
 git add <file name>
 git reset <file name>
 git commit
 git commit -m "for commit message"
+git diff //without id to compare file in working directory and stagging area
+git diff --staged //To compare file in stagging area with most recent commit
+git reset --hard // to clear all the changes in made to file in working directory
+git branch // shows the current branch
+git branch <name> // create branch with name
+git checkout <branch-name> //shift to branch-name
+git checkout -b <new-branch-name> //short cut to create and checkout to that newly created branch
+git merge branch-name1 branch-name2
+git merge --abort // to reverse the merge
+git branch -d branch-name // to delete the branch actually it will not delete branch it will only delete the branch label
+git show commit-id // to compare particular id with its parents file because after merging it become imposible to find parent of any particular file.
+git log -n 1 // here n describes the no of commit you want to see.
